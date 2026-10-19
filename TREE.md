@@ -1,0 +1,53 @@
+# The drive, 126 files
+kinds: 47 document, 34 pdf, 14 spreadsheet, 9 slides, 8 archive, 7 table, 3 image, 2 other, 1 code, 1 video
+
+- OneDrive/  126 files, 439.7 MB; 47 document, 34 pdf, 14 spreadsheet, 9 slides; latest 2026-09-19
+  - 25-26 Residents and fellows contact.xlsx (spreadsheet)
+  - A Network Login ID has been configured for Gregory Schwing.docx (document)
+  - abstract.docx (document)
+  - ACDA23.pptx (slides)
+  - all.csv (table)
+  - all.xlsx (spreadsheet)
+  - analysisWolfSanity - Copy.xlsx (spreadsheet)
+  - analysisWolfSanity.xlsx (spreadsheet)
+  - BackgroundAndGoals.docx (document)
+  - barcode_429757243_16753019610001717258099.pdf (pdf)
+  - and 38 more
+  - Attachments/  47 files, 369.0 MB; 21 pdf, 10 document, 8 archive, 3 image; latest 2026-09-19
+    - CTSpinoPelvic1K_coauthor_draft.docx (document)
+    - 1098-T_21.pdf (pdf)
+    - 1098-T_22.pdf (pdf)
+    - 1210.4594.pdf (pdf)
+    - 2023-2024 Sign and Submit Confirmation _ FAFSA Application _ Federal Student Aid.pdf (pdf)
+    - 3-17_NERVOUS_HANDOUT.pdf (pdf)
+    - Algorithms-3.pdf (pdf)
+    - CERTIFICATION_OF_ID.pdf (pdf)
+    - CMSA_Constitution.docx (document)
+    - CTSpinoPelvic1K_coauthor_signoff.xlsx (spreadsheet)
+    - and 37 more
+  - Gregory @ Wayne State University/  0 files, 0 bytes
+  - Meetings/  0 files, 0 bytes
+  - Microsoft Copilot Chat Files/  1 files, 85.7 KB; 1 pdf
+    - PS_FINAL_DRAFT_1.pdf (pdf)
+  - Microsoft Teams Chat Files/  23 files, 24.2 MB; 9 pdf, 4 table, 4 slides, 3 spreadsheet
+    - 32Compounds.pdf (pdf)
+    - acs.jcim.0c01236.pdf (pdf)
+    - activitiesFixed.csv (table)
+    - eaap7885.full.pdf (pdf)
+    - ippidb_compounds (1).csv (table)
+    - ippidb_compounds.csv (table)
+    - ippidb_compounds_w_activity.xlsx (spreadsheet)
+    - ippidb_final.xlsx (spreadsheet)
+    - ippidb_final_128_MAX.xlsx (spreadsheet)
+    - irg-2a_04-panagiotopoulos.pdf (pdf)
+    - and 13 more
+  - Microsoft Teams Data/  0 files, 0 bytes
+  - PEDS/  7 files, 319.0 KB; 7 document
+    - Inpatient CSA Form 2023.docx (document)
+    - InPatient Feedback Form 2020.docx (document)
+    - Inpatient HP Template.doc (document)
+    - Inpatient Preceptor Form - AUGUST 2023.docx (document)
+    - Inpatient Preceptor Form 2023_Schwing.docx (document)
+    - Primary care CSA 2023.docx (document)
+    - SOAP Note Feedback Form 2021.docx (document)
+  - Recordings/  0 files, 0 bytes
