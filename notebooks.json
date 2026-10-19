@@ -2,15 +2,16 @@
  "notebooks": [
   {
    "slug": "matching",
-   "title": "Matching and graph algorithms",
-   "summary": "Edmonds blossom paper drafts, matching and vertex-cover papers, talks, prelim and prospectus. Drafted from file names; to be checked by reading samples.",
+   "title": "Matching and vertex cover on parallel hardware",
+   "summary": "The owner's thesis line in parallel graph algorithms: a benchmark study of the Kececioglu and Pecqueur Edmonds blossom solver (abstract written, no results in the file), a one-page skeleton for parallelising the DFS Edmonds search by stack splitting and deferred deep searches, a finished talk on parallel crown decomposition for vertex cover, the prospectus and prelim, and the papers it builds on. The writing is at the abstract and skeleton stage; the code is in the archives.",
    "repository": "notebook-matching",
    "files": [
     "OneDrive/ACDA23.pptx",
-    "OneDrive/NORSE.pptx",
     "OneDrive/On the Performance of the Kececioglu and Pecqueur Edmonds Bl.docx",
     "OneDrive/Microsoft Teams Chat Files/Overview_of_Niedermeier.odp",
     "OneDrive/Microsoft Teams Chat Files/Upper Bounds for Vertex Cover Further Improved.pdf",
+    "OneDrive/Microsoft Teams Chat Files/NiceSummaryOfWorkSinceCheetham.pdf",
+    "OneDrive/Microsoft Teams Chat Files/technical_report.pdf",
     "OneDrive/Attachments/1210.4594.pdf",
     "OneDrive/Attachments/Algorithms-3.pdf",
     "OneDrive/Attachments/Gregory Schwing Prospectus.pdf",
@@ -25,20 +26,30 @@
    ]
   },
   {
-   "slug": "ppi",
-   "title": "PPI inhibitors and Wolf-Ross",
-   "summary": "Compound tables and activity data, particle swarm and parallel tempering work, reports and slides. Drafted from file names; to be checked by reading samples.",
-   "repository": "notebook-ppi",
+   "slug": "gomc",
+   "title": "GOMC Monte Carlo: Wolf summation and force fields",
+   "summary": "The owner's work in the GPU-Optimized Monte Carlo (GOMC) lab: a derivation of the intramolecular and self terms of the Wolf (DSF/DSP) electrostatics, an experiment plan for its accuracy and timing on CPU and GPU, a sanity sheet comparing Ewald against five Wolf variants with Welch t-tests (relative errors 0.05 to 0.5 percent, most differences significant), block-averaged energy outputs, the lab's particle-swarm force-field optimisation decks and a parallel tempering code archive. The analysis is underway; the derivation ends with an open check on the cutoff.",
+   "repository": "notebook-gomc",
    "files": [
     "OneDrive/analysisWolfSanity - Copy.xlsx",
     "OneDrive/analysisWolfSanity.xlsx",
-    "OneDrive/Personally_Interesting_Simulations.docx",
-    "OneDrive/PSO-v4.pptx",
-    "OneDrive/PSO-v4_Tuesday.pptx",
-    "OneDrive/state_eq_blk_averages_03d84243be60d046fc9ab346c2eed812.csv",
-    "OneDrive/state_eq_blk_averages_6a7ea2b56661424fb7ffda928c0251bd.csv",
     "OneDrive/Wolf experiments.docx",
     "OneDrive/Wolf-Ross_Greg_Revised.docx",
+    "OneDrive/state_eq_blk_averages_03d84243be60d046fc9ab346c2eed812.csv",
+    "OneDrive/state_eq_blk_averages_6a7ea2b56661424fb7ffda928c0251bd.csv",
+    "OneDrive/PSO-v4.pptx",
+    "OneDrive/PSO-v4_Tuesday.pptx",
+    "OneDrive/Personally_Interesting_Simulations.docx",
+    "OneDrive/Microsoft Teams Chat Files/irg-2a_04-panagiotopoulos.pdf",
+    "OneDrive/Attachments/parallel_tempering.tar.gz"
+   ]
+  },
+  {
+   "slug": "ppi",
+   "title": "Generative design of PPI inhibitors",
+   "summary": "A two-person machine learning project: an adversarial autoencoder and LatentGAN trained on the iPPI-DB database of protein-protein interaction inhibitors (n=2378), comparing four molecule representations and using docking scores as activity. The drive holds the proposal, the compound tables in several cleaned versions, a candidate list, the project deck and report, and the papers it follows. It reads as finished course work that could become a paper.",
+   "repository": "notebook-ppi",
+   "files": [
     "OneDrive/Microsoft Teams Chat Files/32Compounds.pdf",
     "OneDrive/Microsoft Teams Chat Files/acs.jcim.0c01236.pdf",
     "OneDrive/Microsoft Teams Chat Files/activitiesFixed.csv",
@@ -48,8 +59,6 @@
     "OneDrive/Microsoft Teams Chat Files/ippidb_compounds_w_activity.xlsx",
     "OneDrive/Microsoft Teams Chat Files/ippidb_final.xlsx",
     "OneDrive/Microsoft Teams Chat Files/ippidb_final_128_MAX.xlsx",
-    "OneDrive/Microsoft Teams Chat Files/irg-2a_04-panagiotopoulos.pdf",
-    "OneDrive/Microsoft Teams Chat Files/NiceSummaryOfWorkSinceCheetham.pdf",
     "OneDrive/Microsoft Teams Chat Files/potentialNewPPI_inhibitors.csv",
     "OneDrive/Microsoft Teams Chat Files/presentation (1).pptx",
     "OneDrive/Microsoft Teams Chat Files/presentation.odp",
@@ -57,15 +66,13 @@
     "OneDrive/Microsoft Teams Chat Files/proposal.odt",
     "OneDrive/Microsoft Teams Chat Files/report.odt",
     "OneDrive/Microsoft Teams Chat Files/report.pdf",
-    "OneDrive/Microsoft Teams Chat Files/s13321-019-0397-9.pdf",
-    "OneDrive/Microsoft Teams Chat Files/technical_report.pdf",
-    "OneDrive/Attachments/parallel_tempering.tar.gz"
+    "OneDrive/Microsoft Teams Chat Files/s13321-019-0397-9.pdf"
    ]
   },
   {
    "slug": "spine",
-   "title": "Spine CT paper",
-   "summary": "The co-author draft and its sign-off sheet. Drafted from file names; to be checked by reading samples.",
+   "title": "CTSpinoPelvic1K dataset article",
+   "summary": "A Medical Physics dataset article the owner leads as corresponding author: 802 abdominopelvic CT records joining the CTSpine1K and CTPelvic1K labels on one series, with ribs, femora and classes for lumbosacral transitional anatomy, validated and archived on Zenodo. The final draft of 7 September 2026 is out to fourteen co-authors; the sign-off sheet shows eight approvals, most with edits in the document, one in progress and five not yet returned.",
    "repository": "notebook-spine",
    "files": [
     "OneDrive/Attachments/CTSpinoPelvic1K_coauthor_draft.docx",
@@ -73,12 +80,22 @@
    ]
   },
   {
-   "slug": "grants",
-   "title": "Grants and fellowships",
-   "summary": "Specific aims, background and goals, timelines, training plan, letters of support, personal statement. Drafted from file names; to be checked by reading samples.",
-   "repository": "notebook-grants",
+   "slug": "dmg-case-report",
+   "title": "DMG peritoneal metastasis case report",
+   "summary": "A case report and literature review on peritoneal spread of H3K27M diffuse midline glioma after ventriculoperitoneal shunting, eleven cases pooled, with direct laparoscopic images. The full manuscript dated 31 July 2025 has thirteen authors; a separate structured abstract and a second copy of the manuscript sit on the drive. Where it stands in review is not recorded.",
+   "repository": "notebook-dmg-case-report",
    "files": [
     "OneDrive/abstract.docx",
+    "OneDrive/Attachments/VPS_DMG.docx",
+    "OneDrive/Attachments/VPS_DMG 1.docx"
+   ]
+  },
+  {
+   "slug": "grants",
+   "title": "Fellowship applications and research statements",
+   "summary": "The owner's MD-PhD fellowship writing: a research strategy on a hybrid Monte Carlo and molecular dynamics engine (GOMC with NAMD) for docking and force fields, a four-page background and goals narrative, a separate specific-aims draft on drugging the extracellular matrix to stop glioblastoma migration, a letter of support, training plan, career planning and personal statements. The F30 pieces read as submitted drafts; the glioblastoma aims are an earlier, different idea.",
+   "repository": "notebook-grants",
+   "files": [
     "OneDrive/BackgroundAndGoals.docx",
     "OneDrive/Careerplanning.docx",
     "OneDrive/GHHS.docx",
@@ -86,7 +103,6 @@
     "OneDrive/specAimsFocuses.docx",
     "OneDrive/Specific_Story.docx",
     "OneDrive/SpecificAims.docx",
-    "OneDrive/Timelines.docx",
     "OneDrive/Training and Professional Development.pdf",
     "OneDrive/Microsoft Copilot Chat Files/PS_FINAL_DRAFT_1.pdf",
     "OneDrive/Attachments/GATTI_LETTER_OF_SUPPORT_SCHWING-F30_2021.docx"
@@ -94,11 +110,12 @@
   },
   {
    "slug": "teaching",
-   "title": "Teaching and clinical",
-   "summary": "Clerkship forms, note templates, small-group schedules, handouts and the resident pocketbook. Drafted from file names; to be checked by reading samples.",
+   "title": "Clerkships, study notes and teaching",
+   "summary": "Medical school clinical material: pediatric and primary care clerkship forms and templates, SOAP note feedback forms, H&P templates, a surgery clerkship small-group calendar, psychiatry study notes and small-group assignments, a clinical teaching deck on refractory status epilepticus, handouts, the resident pocketbook and a student association constitution. Reference and record of rotations, not a work in progress.",
    "repository": "notebook-teaching",
    "files": [
-    "OneDrive/25-26 Residents and fellows contact.xlsx",
+    "OneDrive/NORSE.pptx",
+    "OneDrive/Timelines.docx",
     "OneDrive/psych_as_1.docx",
     "OneDrive/psych_as_2.docx",
     "OneDrive/SOAP Note Feedback Form 2021.docx",
@@ -164,9 +181,8 @@
   "OneDrive/Attachments/Screenshot from 2024-03-06 21-03-36.png",
   "OneDrive/Attachments/Stipend_citizenship_declaration_v4_filled_signed.pdf",
   "OneDrive/Attachments/video_tiktok_smooth.mp4",
-  "OneDrive/Attachments/VPS_DMG 1.docx",
-  "OneDrive/Attachments/VPS_DMG.docx",
   "OneDrive/Attachments/w2_21.pdf",
-  "OneDrive/Attachments/w2_22.pdf"
+  "OneDrive/Attachments/w2_22.pdf",
+  "OneDrive/25-26 Residents and fellows contact.xlsx"
  ]
 }

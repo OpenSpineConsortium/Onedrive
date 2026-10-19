@@ -1,0 +1,27 @@
+{
+ "slug": "spine",
+ "title": "CTSpinoPelvic1K dataset article",
+ "summary": "A Medical Physics dataset article the owner leads as corresponding author: 802 abdominopelvic CT records joining the CTSpine1K and CTPelvic1K labels on one series, with ribs, femora and classes for lumbosacral transitional anatomy, validated and archived on Zenodo. The final draft of 7 September 2026 is out to fourteen co-authors; the sign-off sheet shows eight approvals, most with edits in the document, one in progress and five not yet returned.",
+ "items": [
+  {
+   "path": "OneDrive/Attachments/CTSpinoPelvic1K_coauthor_draft.docx",
+   "name": "CTSpinoPelvic1K_coauthor_draft.docx",
+   "kind": "document",
+   "size": 1830642,
+   "modified": "2026-09-19T14:19:32.000Z",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/CTSpinoPelvic1K_coauthor_draft.docx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH55D6RIDIATMBC2LCL2ABZ7AOHZ"
+  },
+  {
+   "path": "OneDrive/Attachments/CTSpinoPelvic1K_coauthor_signoff.xlsx",
+   "name": "CTSpinoPelvic1K_coauthor_signoff.xlsx",
+   "kind": "spreadsheet",
+   "size": 9090,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/CTSpinoPelvic1K_coauthor_signoff.xlsx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH3ZEOR4D5N3FFGL4MA7KH6W7PL3"
+  }
+ ]
+}

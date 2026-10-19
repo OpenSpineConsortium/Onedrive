@@ -1,0 +1,177 @@
+{
+ "slug": "matching",
+ "title": "Matching and vertex cover on parallel hardware",
+ "summary": "The owner's thesis line in parallel graph algorithms: a benchmark study of the Kececioglu and Pecqueur Edmonds blossom solver (abstract written, no results in the file), a one-page skeleton for parallelising the DFS Edmonds search by stack splitting and deferred deep searches, a finished talk on parallel crown decomposition for vertex cover, the prospectus and prelim, and the papers it builds on. The writing is at the abstract and skeleton stage; the code is in the archives.",
+ "items": [
+  {
+   "path": "OneDrive/ACDA23.pptx",
+   "name": "ACDA23.pptx",
+   "kind": "slides",
+   "size": 1617452,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/ACDA23.pptx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH7TNN2YMF6THJGJJQLE2NESTW7C"
+  },
+  {
+   "path": "OneDrive/On the Performance of the Kececioglu and Pecqueur Edmonds Bl.docx",
+   "name": "On the Performance of the Kececioglu and Pecqueur Edmonds Bl.docx",
+   "kind": "document",
+   "size": 10855,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/On%20the%20Performance%20of%20the%20Kececioglu%20and%20Pecqueur%20Edmonds%20Bl.docx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHHZSVPCOK3TTLJG3N7EHKDWN3B7Y"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/Overview_of_Niedermeier.odp",
+   "name": "Overview_of_Niedermeier.odp",
+   "kind": "slides",
+   "size": 311004,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/Overview_of_Niedermeier.odp",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH7YGM7EFOFWNJEIZMXFOCWQTP45"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/Upper Bounds for Vertex Cover Further Improved.pdf",
+   "name": "Upper Bounds for Vertex Cover Further Improved.pdf",
+   "kind": "pdf",
+   "size": 182451,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/Upper%20Bounds%20for%20Vertex%20Cover%20Further%20Improved.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH3QAK7WHKKGUZD2IPXZ5L2UIBTO"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/NiceSummaryOfWorkSinceCheetham.pdf",
+   "name": "NiceSummaryOfWorkSinceCheetham.pdf",
+   "kind": "pdf",
+   "size": 150314,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/NiceSummaryOfWorkSinceCheetham.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH5LDL4OZFGNRJA3HAR67ST7FFBV"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/technical_report.pdf",
+   "name": "technical_report.pdf",
+   "kind": "pdf",
+   "size": 359627,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/technical_report.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHHYYWYIJBJBTIBH3I6WTO2RXII35"
+  },
+  {
+   "path": "OneDrive/Attachments/1210.4594.pdf",
+   "name": "1210.4594.pdf",
+   "kind": "pdf",
+   "size": 945098,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/1210.4594.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH34MJ73XBI3GJB3LFENYODXCWFI"
+  },
+  {
+   "path": "OneDrive/Attachments/Algorithms-3.pdf",
+   "name": "Algorithms-3.pdf",
+   "kind": "pdf",
+   "size": 11326617,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/Algorithms-3.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHHZ54GQZSFAPF5B2XGC2ATSFJQNS"
+  },
+  {
+   "path": "OneDrive/Attachments/Gregory Schwing Prospectus.pdf",
+   "name": "Gregory Schwing Prospectus.pdf",
+   "kind": "pdf",
+   "size": 8836764,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/Gregory%20Schwing%20Prospectus.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH6WD4MN5L4K7RCJ7DXMXZ5LGUYW"
+  },
+  {
+   "path": "OneDrive/Attachments/KP98(5).ps",
+   "name": "KP98(5).ps",
+   "kind": "other",
+   "size": 388875,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/KP98%285%29.ps",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH2VB4HKP2AC25EJZULEGL2UMTCE"
+  },
+  {
+   "path": "OneDrive/Attachments/LIPIcs-SEA-2017-10.pdf",
+   "name": "LIPIcs-SEA-2017-10.pdf",
+   "kind": "pdf",
+   "size": 2130843,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/LIPIcs-SEA-2017-10.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH6FK5ESKUAC2VFI4STYEH4DWFSR"
+  },
+  {
+   "path": "OneDrive/Attachments/Matching_paper.pdf",
+   "name": "Matching_paper.pdf",
+   "kind": "pdf",
+   "size": 3407661,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/Matching_paper.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHHZ2OLYNFBVPQVAIX363N52X2VQK"
+  },
+  {
+   "path": "OneDrive/Attachments/MatchingSkeleton.docx",
+   "name": "MatchingSkeleton.docx",
+   "kind": "document",
+   "size": 7003,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/MatchingSkeleton.docx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHHZFYQQY4TMZUBFZL3NPD2SNVYG5"
+  },
+  {
+   "path": "OneDrive/Attachments/NVIDIA.tar.gz",
+   "name": "NVIDIA.tar.gz",
+   "kind": "archive",
+   "size": 11250871,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/NVIDIA.tar.gz",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH3IYZG7XSS6V5HI237AOP7EGQ3V"
+  },
+  {
+   "path": "OneDrive/Attachments/pap317s2.pdf",
+   "name": "pap317s2.pdf",
+   "kind": "pdf",
+   "size": 501006,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/pap317s2.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH4V4U3AROTGYVGKJAHPQ47JSNR5"
+  },
+  {
+   "path": "OneDrive/Attachments/prelim(1).zip",
+   "name": "prelim(1).zip",
+   "kind": "archive",
+   "size": 100228069,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/prelim%281%29.zip",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH3DUZYFHPITX5B2JHYHHAC4ABRZ"
+  },
+  {
+   "path": "OneDrive/Attachments/prelim.zip",
+   "name": "prelim.zip",
+   "kind": "archive",
+   "size": 100228069,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/prelim.zip",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH4SBYHTNHVUGFDZSTUUPI7LA23L"
+  }
+ ]
+}

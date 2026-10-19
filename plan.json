@@ -1,0 +1,468 @@
+{
+ "summary": "A medical school and graduate research drive of 126 files, most of them in Attachments and Teams chat files. Seven projects: thesis work on parallel matching and vertex cover, Wolf summation and force fields in the GOMC Monte Carlo code, a generative model for PPI inhibitors, a CT dataset article at co-author sign-off, a DMG case report, fellowship applications, and clerkship and study material. Personal, financial and identity records are left out.",
+ "projects": [
+  {
+   "slug": "matching",
+   "title": "Matching and vertex cover on parallel hardware",
+   "domain": "research",
+   "summary": "The owner's thesis line in parallel graph algorithms: a benchmark study of the Kececioglu and Pecqueur Edmonds blossom solver (abstract written, no results in the file), a one-page skeleton for parallelising the DFS Edmonds search by stack splitting and deferred deep searches, a finished talk on parallel crown decomposition for vertex cover, the prospectus and prelim, and the papers it builds on. The writing is at the abstract and skeleton stage; the code is in the archives.",
+   "folders": [],
+   "files": [
+    "OneDrive/ACDA23.pptx",
+    "OneDrive/On the Performance of the Kececioglu and Pecqueur Edmonds Bl.docx",
+    "OneDrive/Microsoft Teams Chat Files/Overview_of_Niedermeier.odp",
+    "OneDrive/Microsoft Teams Chat Files/Upper Bounds for Vertex Cover Further Improved.pdf",
+    "OneDrive/Microsoft Teams Chat Files/NiceSummaryOfWorkSinceCheetham.pdf",
+    "OneDrive/Microsoft Teams Chat Files/technical_report.pdf",
+    "OneDrive/Attachments/1210.4594.pdf",
+    "OneDrive/Attachments/Algorithms-3.pdf",
+    "OneDrive/Attachments/Gregory Schwing Prospectus.pdf",
+    "OneDrive/Attachments/KP98(5).ps",
+    "OneDrive/Attachments/LIPIcs-SEA-2017-10.pdf",
+    "OneDrive/Attachments/Matching_paper.pdf",
+    "OneDrive/Attachments/MatchingSkeleton.docx",
+    "OneDrive/Attachments/NVIDIA.tar.gz",
+    "OneDrive/Attachments/pap317s2.pdf",
+    "OneDrive/Attachments/prelim(1).zip",
+    "OneDrive/Attachments/prelim.zip"
+   ],
+   "directions": [
+    "Grow the KP blossom-solver abstract into a full benchmark paper: methods for the four graph families at 100k to 2M vertices, and the measures the abstract promises (runtime against nm, edge traversals, tree sizes, path lengths, dead trees).",
+    "Turn MatchingSkeleton.docx into a design note for the stack-splitting parallel Edmonds search, with the deferred-search threshold as the parameter to measure.",
+    "Build a reading map of the vertex cover references (Niedermeier and Rossmanith, the Cheetham-line CGM paper, the crown decomposition talk) as an annotated bibliography for the dissertation's related-work chapter.",
+    "Unpack the NVIDIA archive and the prelim archive into a list of what code and figures they hold, so the benchmark can be rerun."
+   ],
+   "plan": "Start from the two drafts the owner wrote, the KP solver abstract and the parallel Edmonds skeleton, and the talk on crown decomposition. First inventory what the archives hold, then write the benchmark paper's methods section beside the abstract and a design note beside the skeleton, citing the papers already on the drive. Results come from rerunning the code once its inventory says how.",
+   "repository": {
+    "name": "notebook-matching",
+    "team": false,
+    "why": "The drafts are the owner's own thesis work; nothing read names co-authors who would work in it."
+   },
+   "tasks": [
+    {
+     "title": "Inventory the matching archives",
+     "owner": "",
+     "files": [
+      "OneDrive/Attachments/NVIDIA.tar.gz",
+      "OneDrive/Attachments/prelim.zip"
+     ],
+     "body": "List what each archive holds (code, data, figures, build files) in a new archives-inventory.md beside them, with how to build and run any solver found. Done when every top-level entry is listed with one line on what it is and the duplicate prelim(1).zip is confirmed identical or not."
+    },
+    {
+     "title": "Write the methods for the KP blossom solver benchmark",
+     "owner": "",
+     "files": [
+      "OneDrive/On the Performance of the Kececioglu and Pecqueur Edmonds Bl.docx",
+      "OneDrive/Attachments/KP98(5).ps"
+     ],
+     "body": "Write a new methods.md beside the abstract: graph generators and parameters for the four families, sizes, the measures the abstract lists and how each is counted, and the profiling setup. Done when each measure named in the abstract has a defined counter and each family a reproducible generator setting."
+    },
+    {
+     "title": "Turn the parallel Edmonds skeleton into a design note",
+     "owner": "",
+     "files": [
+      "OneDrive/Attachments/MatchingSkeleton.docx"
+     ],
+     "body": "Write a new design note beside MatchingSkeleton.docx that states the stack-splitting scheme, the depth ceiling and deferred list, what must stay ordered for blossom detection, and the experiment that decides the ceiling. Done when the note gives pseudocode and one experiment plan, and every reference in the skeleton is cited."
+    },
+    {
+     "title": "Annotated bibliography for vertex cover and matching",
+     "owner": "",
+     "files": [
+      "OneDrive/Microsoft Teams Chat Files/Upper Bounds for Vertex Cover Further Improved.pdf",
+      "OneDrive/Microsoft Teams Chat Files/NiceSummaryOfWorkSinceCheetham.pdf",
+      "OneDrive/Microsoft Teams Chat Files/technical_report.pdf",
+      "OneDrive/Attachments/LIPIcs-SEA-2017-10.pdf",
+      "OneDrive/Attachments/Matching_paper.pdf",
+      "OneDrive/Attachments/pap317s2.pdf",
+      "OneDrive/Attachments/1210.4594.pdf"
+     ],
+     "body": "Write bibliography.md with one entry per paper: full citation, the problem, the method, and how it bears on the owner's work. Done when every listed paper has an entry and the two technical reports that are the same Niedermeier work are noted as such."
+    }
+   ]
+  },
+  {
+   "slug": "gomc",
+   "title": "GOMC Monte Carlo: Wolf summation and force fields",
+   "domain": "research",
+   "summary": "The owner's work in the GPU-Optimized Monte Carlo (GOMC) lab: a derivation of the intramolecular and self terms of the Wolf (DSF/DSP) electrostatics, an experiment plan for its accuracy and timing on CPU and GPU, a sanity sheet comparing Ewald against five Wolf variants with Welch t-tests (relative errors 0.05 to 0.5 percent, most differences significant), block-averaged energy outputs, the lab's particle-swarm force-field optimisation decks and a parallel tempering code archive. The analysis is underway; the derivation ends with an open check on the cutoff.",
+   "folders": [],
+   "files": [
+    "OneDrive/analysisWolfSanity - Copy.xlsx",
+    "OneDrive/analysisWolfSanity.xlsx",
+    "OneDrive/Wolf experiments.docx",
+    "OneDrive/Wolf-Ross_Greg_Revised.docx",
+    "OneDrive/state_eq_blk_averages_03d84243be60d046fc9ab346c2eed812.csv",
+    "OneDrive/state_eq_blk_averages_6a7ea2b56661424fb7ffda928c0251bd.csv",
+    "OneDrive/PSO-v4.pptx",
+    "OneDrive/PSO-v4_Tuesday.pptx",
+    "OneDrive/Personally_Interesting_Simulations.docx",
+    "OneDrive/Microsoft Teams Chat Files/irg-2a_04-panagiotopoulos.pdf",
+    "OneDrive/Attachments/parallel_tempering.tar.gz"
+   ],
+   "directions": [
+    "Finish the Wolf derivation in Wolf-Ross_Greg_Revised.docx: settle the cutoff check it leaves open and state the final energy GOMC implements.",
+    "Write up the Ewald against Wolf sanity sheet as a short validation report: which variant matches Ewald within error, and why the t values are significant at relative errors under one percent.",
+    "Run the Wolf experiments plan (accuracy at 510K, timing over box sizes 30 to 500 on 1 and 32 threads and GPU) and record results beside the plan.",
+    "Recover the parallel tempering code from its archive and document how to run it."
+   ],
+   "plan": "Take the derivation, the sanity sheet and the experiment plan as one study of Wolf summation in GOMC. First a validation report from the existing sheet and block averages, then the derivation finished as tracked changes, then the results tables the experiment plan asks for, filled as runs come in. The particle swarm decks and the parallel tempering archive stay as context.",
+   "repository": {
+    "name": "notebook-gomc",
+    "team": false,
+    "why": "The derivation and sheets are the owner's; the lab's colleagues appear only on a group deck, so the owner can invite them later."
+   },
+   "tasks": [
+    {
+     "title": "Validation report: Ewald against Wolf variants",
+     "owner": "",
+     "files": [
+      "OneDrive/analysisWolfSanity.xlsx",
+      "OneDrive/analysisWolfSanity - Copy.xlsx",
+      "OneDrive/state_eq_blk_averages_03d84243be60d046fc9ab346c2eed812.csv",
+      "OneDrive/state_eq_blk_averages_6a7ea2b56661424fb7ffda928c0251bd.csv"
+     ],
+     "body": "Write wolf-validation.md beside the sheet: the method (1001 samples, corrected std, Welch t), a table of mean, error and relative error per variant, what the two block-average files are and how they relate to the sheet, and whether the copy differs from the original. Done when every number in the table is recomputed from the sheet and matches it."
+    },
+    {
+     "title": "Finish the Wolf self and intramolecular derivation",
+     "owner": "",
+     "files": [
+      "OneDrive/Wolf-Ross_Greg_Revised.docx"
+     ],
+     "body": "Revise the derivation as tracked changes: check each step, resolve the open note on the cutoff for the intramolecular term, and end with the one expression GOMC must implement. Done when every step follows from the one before and the final expression is stated with its assumptions on psi."
+    },
+    {
+     "title": "Results tables for the Wolf experiments plan",
+     "owner": "",
+     "files": [
+      "OneDrive/Wolf experiments.docx"
+     ],
+     "body": "Write wolf-results.md beside the plan with empty, labelled tables for experiment 1 (equilibration energy per condition) and experiment 2 (steps per second per box size and condition), and the exact run settings each cell needs. Done when every condition and box size in the plan has its cell and setting."
+    },
+    {
+     "title": "Document the parallel tempering archive",
+     "owner": "",
+     "files": [
+      "OneDrive/Attachments/parallel_tempering.tar.gz"
+     ],
+     "body": "List what the archive holds and write how to build and run it in a new parallel-tempering.md beside it. Done when the build steps and one example run are written down."
+    }
+   ]
+  },
+  {
+   "slug": "ppi",
+   "title": "Generative design of PPI inhibitors",
+   "domain": "research",
+   "summary": "A two-person machine learning project: an adversarial autoencoder and LatentGAN trained on the iPPI-DB database of protein-protein interaction inhibitors (n=2378), comparing four molecule representations and using docking scores as activity. The drive holds the proposal, the compound tables in several cleaned versions, a candidate list, the project deck and report, and the papers it follows. It reads as finished course work that could become a paper.",
+   "folders": [],
+   "files": [
+    "OneDrive/Microsoft Teams Chat Files/32Compounds.pdf",
+    "OneDrive/Microsoft Teams Chat Files/acs.jcim.0c01236.pdf",
+    "OneDrive/Microsoft Teams Chat Files/activitiesFixed.csv",
+    "OneDrive/Microsoft Teams Chat Files/eaap7885.full.pdf",
+    "OneDrive/Microsoft Teams Chat Files/ippidb_compounds (1).csv",
+    "OneDrive/Microsoft Teams Chat Files/ippidb_compounds.csv",
+    "OneDrive/Microsoft Teams Chat Files/ippidb_compounds_w_activity.xlsx",
+    "OneDrive/Microsoft Teams Chat Files/ippidb_final.xlsx",
+    "OneDrive/Microsoft Teams Chat Files/ippidb_final_128_MAX.xlsx",
+    "OneDrive/Microsoft Teams Chat Files/potentialNewPPI_inhibitors.csv",
+    "OneDrive/Microsoft Teams Chat Files/presentation (1).pptx",
+    "OneDrive/Microsoft Teams Chat Files/presentation.odp",
+    "OneDrive/Microsoft Teams Chat Files/presentation.pptx",
+    "OneDrive/Microsoft Teams Chat Files/proposal.odt",
+    "OneDrive/Microsoft Teams Chat Files/report.odt",
+    "OneDrive/Microsoft Teams Chat Files/report.pdf",
+    "OneDrive/Microsoft Teams Chat Files/s13321-019-0397-9.pdf"
+   ],
+   "directions": [
+    "Reconcile the compound tables (the two ippidb_compounds CSVs, the activity sheet, ippidb_final and its 128-character cut) into one data dictionary saying which is the training set.",
+    "Score the generated candidates in potentialNewPPI_inhibitors.csv against the training set for novelty and validity, as the MOSES benchmark the proposal names does.",
+    "Turn the report into a short paper draft, starting from the proposal's four-representation comparison."
+   ],
+   "plan": "Start with the data: say which table is which and how each was made, so the results can be reproduced. Then summarise the generated candidates against the training set, and only then revise the report toward a paper.",
+   "repository": {
+    "name": "notebook-ppi",
+    "team": false,
+    "why": "The project had a partner, but it reads as finished course work; the owner can make it a team repository if the partner returns to it."
+   },
+   "tasks": [
+    {
+     "title": "Data dictionary for the iPPI-DB tables",
+     "owner": "",
+     "files": [
+      "OneDrive/Microsoft Teams Chat Files/ippidb_compounds.csv",
+      "OneDrive/Microsoft Teams Chat Files/ippidb_compounds (1).csv",
+      "OneDrive/Microsoft Teams Chat Files/ippidb_compounds_w_activity.xlsx",
+      "OneDrive/Microsoft Teams Chat Files/ippidb_final.xlsx",
+      "OneDrive/Microsoft Teams Chat Files/ippidb_final_128_MAX.xlsx",
+      "OneDrive/Microsoft Teams Chat Files/activitiesFixed.csv"
+     ],
+     "body": "Write data-dictionary.md: for each table its columns, row count, how it differs from the others (duplicates, filters, the 128 cut) and which one trained the model. Done when every table is described and the two same-size CSVs are confirmed identical or their differences listed."
+    },
+    {
+     "title": "Summary of the generated candidates",
+     "owner": "",
+     "files": [
+      "OneDrive/Microsoft Teams Chat Files/potentialNewPPI_inhibitors.csv",
+      "OneDrive/Microsoft Teams Chat Files/ippidb_final.xlsx"
+     ],
+     "body": "Write candidates-report.md beside the list: how many candidates, how many are valid, unique and absent from the training set, with the method used. Done when each count is reproducible from a script or formula written into the report."
+    },
+    {
+     "title": "Outline a paper from the project report",
+     "owner": "",
+     "files": [
+      "OneDrive/Microsoft Teams Chat Files/report.odt",
+      "OneDrive/Microsoft Teams Chat Files/proposal.odt"
+     ],
+     "body": "Write paper-outline.md: the question, the data, the four representations, the results the report holds and the gaps a paper would need filled. Done when every section of the outline points to its source in the report or proposal, or says it is missing."
+    }
+   ]
+  },
+  {
+   "slug": "spine",
+   "title": "CTSpinoPelvic1K dataset article",
+   "domain": "research",
+   "summary": "A Medical Physics dataset article the owner leads as corresponding author: 802 abdominopelvic CT records joining the CTSpine1K and CTPelvic1K labels on one series, with ribs, femora and classes for lumbosacral transitional anatomy, validated and archived on Zenodo. The final draft of 7 September 2026 is out to fourteen co-authors; the sign-off sheet shows eight approvals, most with edits in the document, one in progress and five not yet returned.",
+   "folders": [],
+   "files": [
+    "OneDrive/Attachments/CTSpinoPelvic1K_coauthor_draft.docx",
+    "OneDrive/Attachments/CTSpinoPelvic1K_coauthor_signoff.xlsx"
+   ],
+   "directions": [
+    "Fold the co-authors' edits into one revision, as tracked changes on the draft, listing each edit taken or declined.",
+    "Act on the sign-off comment that the limitations are repeated: state each limitation once, with why it matters and how future work addresses it.",
+    "Track the sign-offs still missing and draft a reminder for each co-author who has not returned the sheet.",
+    "Check the article against the journal's dataset-article requirements before submission."
+   ],
+   "plan": "The article is at final sign-off. Collect the returned edits into one tracked revision, settle the limitations comment, and chase the missing sign-offs; then a submission checklist. Co-authors can review in the repository as a team.",
+   "repository": {
+    "name": "notebook-spine",
+    "team": true,
+    "why": "Fourteen co-authors are reviewing the final draft and returning edits on the sign-off sheet, so they would join to review."
+   },
+   "tasks": [
+    {
+     "title": "Merge co-author edits into one tracked revision",
+     "owner": "",
+     "files": [
+      "OneDrive/Attachments/CTSpinoPelvic1K_coauthor_draft.docx",
+      "OneDrive/Attachments/CTSpinoPelvic1K_coauthor_signoff.xlsx"
+     ],
+     "body": "Write a new revision of the draft as tracked changes (never over the original) carrying the co-authors' edits, and an edits-log.md listing each suggestion, who made it and whether it was taken. Done when every 'with edits' row on the sheet has its edits logged."
+    },
+    {
+     "title": "State each limitation once",
+     "owner": "",
+     "files": [
+      "OneDrive/Attachments/CTSpinoPelvic1K_coauthor_draft.docx"
+     ],
+     "body": "As tracked changes, gather the limitations into one place: each stated once with why it is a problem and how future work can address it, and remove the repeats elsewhere. Done when no limitation appears in more than one section beyond the abstract."
+    },
+    {
+     "title": "Sign-off status and reminders",
+     "owner": "",
+     "files": [
+      "OneDrive/Attachments/CTSpinoPelvic1K_coauthor_signoff.xlsx"
+     ],
+     "body": "Write signoff-status.md: who approved, with or without edits, who is in progress and who has not answered, and a short reminder text for those outstanding. Done when the counts match the sheet."
+    }
+   ]
+  },
+  {
+   "slug": "dmg-case-report",
+   "title": "DMG peritoneal metastasis case report",
+   "domain": "research",
+   "summary": "A case report and literature review on peritoneal spread of H3K27M diffuse midline glioma after ventriculoperitoneal shunting, eleven cases pooled, with direct laparoscopic images. The full manuscript dated 31 July 2025 has thirteen authors; a separate structured abstract and a second copy of the manuscript sit on the drive. Where it stands in review is not recorded.",
+   "folders": [],
+   "files": [
+    "OneDrive/abstract.docx",
+    "OneDrive/Attachments/VPS_DMG.docx",
+    "OneDrive/Attachments/VPS_DMG 1.docx"
+   ],
+   "directions": [
+    "Confirm whether the two manuscript copies are identical and say which is current.",
+    "Check the abstract's pooled numbers (ages, survival, time to metastasis) against the case table in the manuscript.",
+    "Update the literature search to 2026 with the review's stated inclusion criteria and add any new cases."
+   ],
+   "plan": "Settle which copy is current, then check the abstract's statistics against the manuscript, then update the review. Revisions go in as tracked changes so the thirteen authors can see them.",
+   "repository": {
+    "name": "notebook-dmg-case-report",
+    "team": true,
+    "why": "The manuscript lists thirteen authors across neurosurgery and oncology, who would review revisions."
+   },
+   "tasks": [
+    {
+     "title": "Compare the two manuscript copies",
+     "owner": "",
+     "files": [
+      "OneDrive/Attachments/VPS_DMG.docx",
+      "OneDrive/Attachments/VPS_DMG 1.docx"
+     ],
+     "body": "Write copies.md: whether the two files differ in text, figures or tracked changes, and which is the newer. Done when the comparison names every difference or confirms none."
+    },
+    {
+     "title": "Check the abstract against the manuscript",
+     "owner": "",
+     "files": [
+      "OneDrive/abstract.docx",
+      "OneDrive/Attachments/VPS_DMG.docx"
+     ],
+     "body": "Recompute the abstract's mean age, overall survival, time to metastasis and post-metastasis survival from the manuscript's case table, and write numbers-check.md listing each figure, the recomputed value and whether they agree. Done when every number in the abstract's results is checked."
+    },
+    {
+     "title": "Update the literature search",
+     "owner": "",
+     "files": [
+      "OneDrive/Attachments/VPS_DMG.docx"
+     ],
+     "body": "Rerun the review's PubMed search with its stated criteria for papers up to 2026 and write search-update.md with the query, the hits, and the new cases that meet the criteria. Done when the query is reproducible and each new case is listed with its citation."
+    }
+   ]
+  },
+  {
+   "slug": "grants",
+   "title": "Fellowship applications and research statements",
+   "domain": "writing",
+   "summary": "The owner's MD-PhD fellowship writing: a research strategy on a hybrid Monte Carlo and molecular dynamics engine (GOMC with NAMD) for docking and force fields, a four-page background and goals narrative, a separate specific-aims draft on drugging the extracellular matrix to stop glioblastoma migration, a letter of support, training plan, career planning and personal statements. The F30 pieces read as submitted drafts; the glioblastoma aims are an earlier, different idea.",
+   "folders": [],
+   "files": [
+    "OneDrive/BackgroundAndGoals.docx",
+    "OneDrive/Careerplanning.docx",
+    "OneDrive/GHHS.docx",
+    "OneDrive/Please make the following changes to your submission.docx",
+    "OneDrive/specAimsFocuses.docx",
+    "OneDrive/Specific_Story.docx",
+    "OneDrive/SpecificAims.docx",
+    "OneDrive/Training and Professional Development.pdf",
+    "OneDrive/Microsoft Copilot Chat Files/PS_FINAL_DRAFT_1.pdf",
+    "OneDrive/Attachments/GATTI_LETTER_OF_SUPPORT_SCHWING-F30_2021.docx"
+   ],
+   "directions": [
+    "Assemble the F30 pieces (aims, background and goals, training plan, letter of support) into one application map with what each section holds and what is missing for a resubmission.",
+    "Update the research strategy to where the GOMC and NAMD work stands now, as tracked changes.",
+    "Develop the glioblastoma extracellular matrix aims into a one-page aims draft for a new application, separate from the F30.",
+    "Keep the personal statements and career planning together as a source for later applications."
+   ],
+   "plan": "Map the fellowship pieces first, so it is clear what a resubmission or a new application starts from. Then revise the research strategy as tracked changes and draft the glioblastoma aims page separately.",
+   "repository": {
+    "name": "notebook-grants",
+    "team": false,
+    "why": "Applications are the owner's own; mentors give letters, not edits in the files."
+   },
+   "tasks": [
+    {
+     "title": "Map the F30 application",
+     "owner": "",
+     "files": [
+      "OneDrive/SpecificAims.docx",
+      "OneDrive/BackgroundAndGoals.docx",
+      "OneDrive/Training and Professional Development.pdf",
+      "OneDrive/Attachments/GATTI_LETTER_OF_SUPPORT_SCHWING-F30_2021.docx",
+      "OneDrive/Please make the following changes to your submission.docx"
+     ],
+     "body": "Write application-map.md: each section of an F30, which file holds it, its length, and what is missing or would need updating, including any changes the submission notice asked for. Done when every required section is listed with a file or marked missing."
+    },
+    {
+     "title": "Update the research strategy",
+     "owner": "",
+     "files": [
+      "OneDrive/SpecificAims.docx"
+     ],
+     "body": "As tracked changes, bring the hybrid MD-MC research strategy up to the current state of the work, marking claims that need a citation or a result. Done when each aim has a current status sentence and no change overwrites the original."
+    },
+    {
+     "title": "One-page aims for the glioblastoma ECM idea",
+     "owner": "",
+     "files": [
+      "OneDrive/specAimsFocuses.docx"
+     ],
+     "body": "Write a new one-page specific aims draft beside the file: the gap, the hypothesis, and three aims for physical, biochemical and chemical obstruction. Done when it fits one page and each aim names its computational method and its validation."
+    }
+   ]
+  },
+  {
+   "slug": "teaching",
+   "title": "Clerkships, study notes and teaching",
+   "domain": "teaching",
+   "summary": "Medical school clinical material: pediatric and primary care clerkship forms and templates, SOAP note feedback forms, H&P templates, a surgery clerkship small-group calendar, psychiatry study notes and small-group assignments, a clinical teaching deck on refractory status epilepticus, handouts, the resident pocketbook and a student association constitution. Reference and record of rotations, not a work in progress.",
+   "folders": [
+    "OneDrive/PEDS"
+   ],
+   "files": [
+    "OneDrive/NORSE.pptx",
+    "OneDrive/Timelines.docx",
+    "OneDrive/psych_as_1.docx",
+    "OneDrive/psych_as_2.docx",
+    "OneDrive/SOAP Note Feedback Form 2021.docx",
+    "OneDrive/PEDS/Inpatient CSA Form 2023.docx",
+    "OneDrive/PEDS/InPatient Feedback Form 2020.docx",
+    "OneDrive/PEDS/Inpatient HP Template.doc",
+    "OneDrive/PEDS/Inpatient Preceptor Form - AUGUST 2023.docx",
+    "OneDrive/PEDS/Inpatient Preceptor Form 2023_Schwing.docx",
+    "OneDrive/PEDS/Primary care CSA 2023.docx",
+    "OneDrive/PEDS/SOAP Note Feedback Form 2021.docx",
+    "OneDrive/Attachments/3-17_NERVOUS_HANDOUT.pdf",
+    "OneDrive/Attachments/CMSA_Constitution.docx",
+    "OneDrive/Attachments/Diverticulitis.pdf",
+    "OneDrive/Attachments/Inpatient H&P Template.doc",
+    "OneDrive/Attachments/Inpatient H&P Template_DONE.doc",
+    "OneDrive/Attachments/Jan-Mar 2025 small group sessions schedule.docx",
+    "OneDrive/Attachments/Perinatal Depression - StatPearls - NCBI Bookshelf (2).pdf",
+    "OneDrive/Attachments/QR Code for WSU Evals.docx",
+    "OneDrive/Attachments/Resident Pocketbook Abrev - 2-2017 two sided small FINAL.pdf",
+    "OneDrive/Attachments/WB Clinics.xlsx"
+   ],
+   "directions": [
+    "Turn the psychiatry notes in Timelines.docx into a one-page study sheet of criteria and first-line treatments.",
+    "Gather the clerkship forms and templates into one index by rotation and year, noting the duplicates (two SOAP note forms, three H&P templates).",
+    "Expand the status epilepticus deck's definitions into a short teaching handout."
+   ],
+   "plan": "This is reference material; the useful work is an index and a couple of study aids. Index the forms by rotation, then write the study sheet from the psychiatry notes.",
+   "repository": {
+    "name": "notebook-teaching",
+    "team": false,
+    "why": "Personal study and rotation material."
+   },
+   "tasks": [
+    {
+     "title": "Index the clerkship forms and templates",
+     "owner": "",
+     "files": [
+      "OneDrive/PEDS/Inpatient CSA Form 2023.docx",
+      "OneDrive/PEDS/Primary care CSA 2023.docx",
+      "OneDrive/SOAP Note Feedback Form 2021.docx",
+      "OneDrive/PEDS/SOAP Note Feedback Form 2021.docx",
+      "OneDrive/PEDS/Inpatient HP Template.doc",
+      "OneDrive/Attachments/Inpatient H&P Template.doc",
+      "OneDrive/Attachments/Inpatient H&P Template_DONE.doc"
+     ],
+     "body": "Write forms-index.md: each form or template, its rotation, its year, and whether it duplicates another. Done when every form in the project is listed and each duplicate pair is marked identical or not."
+    },
+    {
+     "title": "Psychiatry study sheet",
+     "owner": "",
+     "files": [
+      "OneDrive/Timelines.docx",
+      "OneDrive/psych_as_1.docx",
+      "OneDrive/psych_as_2.docx"
+     ],
+     "body": "Write a new one-page study sheet beside the notes: diagnostic criteria and first-line treatments by disorder, drawn from the notes and the two assignments. Done when every disorder in the notes has a line and nothing is added that the notes do not support."
+    }
+   ]
+  }
+ ],
+ "unsorted": [
+  "OneDrive/Gregory @ Wayne State University",
+  "OneDrive/Meetings",
+  "OneDrive/Microsoft Teams Data",
+  "OneDrive/Recordings"
+ ],
+ "directions": [
+  "The two manuscripts with co-authors (the CT dataset article and the case report) are the closest to done and gain most from review in a team repository.",
+  "The matching and GOMC work both feed the PhD; one dissertation outline could tie them, starting from the prospectus.",
+  "Several files are duplicates (prelim.zip and prelim(1).zip, the two ippidb_compounds CSVs, the two VPS_DMG copies, the analysisWolfSanity copy, two LOR zips); confirm and keep one of each, by the owner's word only.",
+  "Top-level spreadsheets named Book, all.csv and all.xlsx were not read and fit no project by name; a look at them would place or drop them."
+ ]
+}

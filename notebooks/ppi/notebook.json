@@ -1,0 +1,177 @@
+{
+ "slug": "ppi",
+ "title": "Generative design of PPI inhibitors",
+ "summary": "A two-person machine learning project: an adversarial autoencoder and LatentGAN trained on the iPPI-DB database of protein-protein interaction inhibitors (n=2378), comparing four molecule representations and using docking scores as activity. The drive holds the proposal, the compound tables in several cleaned versions, a candidate list, the project deck and report, and the papers it follows. It reads as finished course work that could become a paper.",
+ "items": [
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/32Compounds.pdf",
+   "name": "32Compounds.pdf",
+   "kind": "pdf",
+   "size": 170048,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/32Compounds.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH65IZE3LQTX6RDLQJEPCCXMOPRS"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/acs.jcim.0c01236.pdf",
+   "name": "acs.jcim.0c01236.pdf",
+   "kind": "pdf",
+   "size": 1499722,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/acs.jcim.0c01236.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH46UFMHPYWOMJBI24273CMXFJXV"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/activitiesFixed.csv",
+   "name": "activitiesFixed.csv",
+   "kind": "table",
+   "size": 107042,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/activitiesFixed.csv",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH3RPC36K27JZBGZQM5A62HVBABL"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/eaap7885.full.pdf",
+   "name": "eaap7885.full.pdf",
+   "kind": "pdf",
+   "size": 4047494,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/eaap7885.full.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH4G57IZCLFX5JDIKMR4OU5TCE75"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/ippidb_compounds (1).csv",
+   "name": "ippidb_compounds (1).csv",
+   "kind": "table",
+   "size": 211159,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/ippidb_compounds%20%281%29.csv",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH65WTNU7U7OMNBKXQZVDDCCSBQS"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/ippidb_compounds.csv",
+   "name": "ippidb_compounds.csv",
+   "kind": "table",
+   "size": 211159,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/ippidb_compounds.csv",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH43BDZ54QYYWZELEUIRSHUF7TON"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/ippidb_compounds_w_activity.xlsx",
+   "name": "ippidb_compounds_w_activity.xlsx",
+   "kind": "spreadsheet",
+   "size": 338738,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/ippidb_compounds_w_activity.xlsx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH2AXLCYZSEENZAKVF6ZZESKCYZ3"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/ippidb_final.xlsx",
+   "name": "ippidb_final.xlsx",
+   "kind": "spreadsheet",
+   "size": 339368,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/ippidb_final.xlsx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH3V2SW4EIHPRNCZIUZBGHS356TO"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/ippidb_final_128_MAX.xlsx",
+   "name": "ippidb_final_128_MAX.xlsx",
+   "kind": "spreadsheet",
+   "size": 150230,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/ippidb_final_128_MAX.xlsx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH5SILVUOQVVSJBJQTLGDRJVEBAW"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/potentialNewPPI_inhibitors.csv",
+   "name": "potentialNewPPI_inhibitors.csv",
+   "kind": "table",
+   "size": 1576472,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/potentialNewPPI_inhibitors.csv",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH4DYPABGR3W5FDLRYABI2EHE7S6"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/presentation (1).pptx",
+   "name": "presentation (1).pptx",
+   "kind": "slides",
+   "size": 4298794,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/presentation%20%281%29.pptx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH34AGA7YLTYHFHIMKQ4HXLIZQK7"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/presentation.odp",
+   "name": "presentation.odp",
+   "kind": "slides",
+   "size": 4271651,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/presentation.odp",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHHYAZPEC5FTQ3JC3ML6GOZZUK3EH"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/presentation.pptx",
+   "name": "presentation.pptx",
+   "kind": "slides",
+   "size": 746090,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/presentation.pptx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHHZRTMMUMAOBIZCLZ4ELRA4AW3SV"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/proposal.odt",
+   "name": "proposal.odt",
+   "kind": "document",
+   "size": 28651,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/proposal.odt",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHHZAXBGLWGUAAZF3CRNOI7YFHEJY"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/report.odt",
+   "name": "report.odt",
+   "kind": "document",
+   "size": 935245,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/report.odt",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHHZKANQNCLHUMZELYNPQBCCGLKEZ"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/report.pdf",
+   "name": "report.pdf",
+   "kind": "pdf",
+   "size": 1183888,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/report.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH6ALO6MJH6AJZEJEFM24BF6BS2Q"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/s13321-019-0397-9.pdf",
+   "name": "s13321-019-0397-9.pdf",
+   "kind": "pdf",
+   "size": 3593397,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/s13321-019-0397-9.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH7N6VL4WECJIBEJODNROEFVXBPC"
+  }
+ ]
+}

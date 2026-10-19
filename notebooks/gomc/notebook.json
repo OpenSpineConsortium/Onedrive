@@ -1,0 +1,117 @@
+{
+ "slug": "gomc",
+ "title": "GOMC Monte Carlo: Wolf summation and force fields",
+ "summary": "The owner's work in the GPU-Optimized Monte Carlo (GOMC) lab: a derivation of the intramolecular and self terms of the Wolf (DSF/DSP) electrostatics, an experiment plan for its accuracy and timing on CPU and GPU, a sanity sheet comparing Ewald against five Wolf variants with Welch t-tests (relative errors 0.05 to 0.5 percent, most differences significant), block-averaged energy outputs, the lab's particle-swarm force-field optimisation decks and a parallel tempering code archive. The analysis is underway; the derivation ends with an open check on the cutoff.",
+ "items": [
+  {
+   "path": "OneDrive/analysisWolfSanity - Copy.xlsx",
+   "name": "analysisWolfSanity - Copy.xlsx",
+   "kind": "spreadsheet",
+   "size": 11813,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/analysisWolfSanity%20-%20Copy.xlsx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH5VVOD5IDQIWZEJLQYZRGA6V7PX"
+  },
+  {
+   "path": "OneDrive/analysisWolfSanity.xlsx",
+   "name": "analysisWolfSanity.xlsx",
+   "kind": "spreadsheet",
+   "size": 10702,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/analysisWolfSanity.xlsx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH2QAMC6IDPMLZBIEPVHVBWPTQ3H"
+  },
+  {
+   "path": "OneDrive/Wolf experiments.docx",
+   "name": "Wolf experiments.docx",
+   "kind": "document",
+   "size": 19546,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Wolf%20experiments.docx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH5TQTM5AFLCCFAY5HSE53WKUOPT"
+  },
+  {
+   "path": "OneDrive/Wolf-Ross_Greg_Revised.docx",
+   "name": "Wolf-Ross_Greg_Revised.docx",
+   "kind": "document",
+   "size": 44447,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Wolf-Ross_Greg_Revised.docx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH5G5D73C27S6FGZHET6D67HUVBN"
+  },
+  {
+   "path": "OneDrive/state_eq_blk_averages_03d84243be60d046fc9ab346c2eed812.csv",
+   "name": "state_eq_blk_averages_03d84243be60d046fc9ab346c2eed812.csv",
+   "kind": "table",
+   "size": 590,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/state_eq_blk_averages_03d84243be60d046fc9ab346c2eed812.csv",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH46A66AIUKWMBDKHPTNCVHXGMTF"
+  },
+  {
+   "path": "OneDrive/state_eq_blk_averages_6a7ea2b56661424fb7ffda928c0251bd.csv",
+   "name": "state_eq_blk_averages_6a7ea2b56661424fb7ffda928c0251bd.csv",
+   "kind": "table",
+   "size": 602,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/state_eq_blk_averages_6a7ea2b56661424fb7ffda928c0251bd.csv",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH4QWUTLT3J5TJGKFHVI2ZOI7V3V"
+  },
+  {
+   "path": "OneDrive/PSO-v4.pptx",
+   "name": "PSO-v4.pptx",
+   "kind": "slides",
+   "size": 25153534,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/PSO-v4.pptx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH3MCZGNYEJDAZGJRKFBAAX3PZUC"
+  },
+  {
+   "path": "OneDrive/PSO-v4_Tuesday.pptx",
+   "name": "PSO-v4_Tuesday.pptx",
+   "kind": "slides",
+   "size": 18103473,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/PSO-v4_Tuesday.pptx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH6ZZQDGLXCOKRDIDU32DKYHLDJP"
+  },
+  {
+   "path": "OneDrive/Personally_Interesting_Simulations.docx",
+   "name": "Personally_Interesting_Simulations.docx",
+   "kind": "document",
+   "size": 20798,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Personally_Interesting_Simulations.docx",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHHZOKXS62UUZ6JH24A5ZX7EKOKYM"
+  },
+  {
+   "path": "OneDrive/Microsoft Teams Chat Files/irg-2a_04-panagiotopoulos.pdf",
+   "name": "irg-2a_04-panagiotopoulos.pdf",
+   "kind": "pdf",
+   "size": 556472,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Microsoft%20Teams%20Chat%20Files/irg-2a_04-panagiotopoulos.pdf",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHHY7RJJT22ZA5JB3TY4R3QUAASBC"
+  },
+  {
+   "path": "OneDrive/Attachments/parallel_tempering.tar.gz",
+   "name": "parallel_tempering.tar.gz",
+   "kind": "archive",
+   "size": 33751078,
+   "modified": "",
+   "web": "https://waynestateprod-my.sharepoint.com/personal/go2432_wayne_edu/Documents/Attachments/parallel_tempering.tar.gz",
+   "drive": "b!GAPWJZIHaUa1HTGdkplfuH0Y-WwjWqpKktybB-cDqUHEip8fjzKlR58UX8N-Qrjs",
+   "id": "01FK6ZHH75WIJEDTOOWBDJGIOSVAO6D4K3"
+  }
+ ]
+}
