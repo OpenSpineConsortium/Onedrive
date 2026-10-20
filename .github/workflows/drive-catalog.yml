@@ -1,0 +1,106 @@
+name: Drive catalog
+
+# Reads the owner's whole OneDrive through Microsoft Graph, under the owner's
+# own Microsoft sign-in, into the branch drive-catalog: catalog.json (every
+# folder and file, each item's parent, the folders Microsoft 365's apps keep
+# at the top, listed but never read into), TREE.md and digests.jsonl (a
+# sample of what the files hold). The sign-in is the control panel's Folders
+# tab: Connect OneDrive, then Track with this repository chosen in the bar,
+# which seals the refresh token into the secret SYMPHONY_DRIVE_REFRESH; the
+# sign-in service trades it for an access token here, so no Microsoft token
+# is in this repository or a log.
+#
+# Started by hand only, on the owner's word, since it opens a sample of the
+# files. The catalog is one commit on top of drive-catalog, beside the plan,
+# the moves and the notebooks kept there, never a forced push. The tools are
+# symphony-template's (tools/drive_organize.py, drive_sync.py,
+# file_digest.py and the vendored sdlc_protocol they import), copied here at
+# the commit README.md names; this repository is private, and the log
+# carries counts alone.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: drive-catalog
+  cancel-in-progress: false
+
+jobs:
+  catalog:
+    if: github.event.repository.fork == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Is the drive connected, in a private repository?
+        env:
+          REFRESH: ${{ secrets.SYMPHONY_DRIVE_REFRESH }}
+          PRIVATE: ${{ github.event.repository.private }}
+        run: |
+          if [ "$PRIVATE" != "true" ]; then
+            echo "The drive catalog runs only in a private repository: it names the drive's files." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          if [ -z "$REFRESH" ]; then
+            echo "No drive connected: the secret SYMPHONY_DRIVE_REFRESH is missing; the control panel's Folders tab connects one (Connect OneDrive, then Track, with this repository chosen)." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+      - name: List every folder and file, and digest a sample
+        env:
+          SYMPHONY_DRIVE_REFRESH: ${{ secrets.SYMPHONY_DRIVE_REFRESH }}
+          SYMPHONY_DRIVE_TOKEN_URL: ${{ vars.SYMPHONY_DRIVE_TOKEN_URL || 'https://symphony-signin.openspineconsortium.workers.dev/drive/token' }}
+        run: |
+          set -eu
+          printf '%s\n' '{"provider": "microsoft", "organize": {"items": [{"id": "root", "name": "OneDrive"}]}}' > "$RUNNER_TEMP/drive.json"
+          python3 tools/drive_organize.py catalog --config "$RUNNER_TEMP/drive.json" --out "$RUNNER_TEMP/catalog" > "$RUNNER_TEMP/counts.json"
+          echo "catalog: $(cat "$RUNNER_TEMP/counts.json")" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      # drive-catalog also holds what others wrote beside the catalog: a
+      # session's plan.json, moves.json and MOVES.md, and the control
+      # panel's notebooks.json and notebooks/. So the new catalog is one
+      # commit on top of the branch, never a forced push that would drop
+      # them, and a branch that moved while the drive was read refuses it.
+      - name: Keep the catalog on drive-catalog, beside what is there
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          basic="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          remote="https://github.com/$GITHUB_REPOSITORY"
+          work="$RUNNER_TEMP/drive-catalog"
+          git init --quiet "$work"
+          found=0
+          git -C "$work" -c http.extraheader="AUTHORIZATION: basic $basic" \
+            ls-remote --exit-code --heads "$remote" refs/heads/drive-catalog > /dev/null || found=$?
+          if [ "$found" = 0 ]; then
+            git -C "$work" -c http.extraheader="AUTHORIZATION: basic $basic" fetch --quiet "$remote" refs/heads/drive-catalog
+            git -C "$work" checkout --quiet --detach FETCH_HEAD
+          elif [ "$found" != 2 ]; then
+            echo "Could not read whether drive-catalog exists, so the catalog was not kept; run the workflow again." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          cp "$RUNNER_TEMP/catalog/catalog.json" "$RUNNER_TEMP/catalog/TREE.md" "$RUNNER_TEMP/catalog/digests.jsonl" "$work/"
+          git -C "$work" add catalog.json TREE.md digests.jsonl
+          if git -C "$work" diff --cached --quiet; then
+            echo "The catalog is as drive-catalog already held it." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git -C "$work" -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit --quiet -m "What the drive catalog read through Graph"
+          if ! git -C "$work" -c http.extraheader="AUTHORIZATION: basic $basic" \
+              push --quiet "$remote" "HEAD:refs/heads/drive-catalog"; then
+            echo "drive-catalog refused the push, most likely because it moved while the drive was read, so the catalog was not kept; run the workflow again." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          if [ -f "$work/plan.json" ] || [ -f "$work/moves.json" ]; then
+            echo "plan.json or moves.json on drive-catalog came from an earlier catalog: check them against this one before any move." | tee -a "$GITHUB_STEP_SUMMARY"
+          fi
